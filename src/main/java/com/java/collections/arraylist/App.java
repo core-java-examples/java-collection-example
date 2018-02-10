@@ -1,4 +1,4 @@
-package com.java.java_collection_example;
+package com.java.collections.arraylist;
 
 /**
  * Hello world!
