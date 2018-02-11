@@ -31,5 +31,46 @@ public class ArrayListExample {
 	  obj.remove(1);
 
 	  System.out.println("Current array list is:"+obj);
-   }
+	  
+	  /* Practice Code */
+	  ArrayList<String> arr= new ArrayList<String>();
+	  /*Add */
+	  System.out.println("India One Day Team Against SA");
+	  arr.add("Virat");
+	  arr.add("Rohit");
+	  arr.add("Shikhar");
+	  arr.add("Dhoni");
+	  arr.add("Rahane");
+	  arr.add("Dhoni");
+	  arr.add("Bhuvi");
+	  arr.add("Bumrah");
+	  System.out.println("Output Add: "+arr);
+	  /* Add Index */
+	  arr.add(1, "Iyar");
+	  System.out.println("Output after Index add:"+arr);
+	  /* Remove */
+	  arr.remove("Virat");
+	  System.out.println("Output After Remove: "+arr);
+	  /* Remove Index*/
+	  arr.remove(0);
+	  System.out.println("Output After Remove Index:"+arr);
+      //arr.get(3);
+      //System.out.println("Output Get:"+arr.get(3));
+     
+      System.out.println(arr.contains("Rohit"));
+     
+      System.out.println(arr.isEmpty());
+      arr.size();
+      System.out.println(arr.size());
+      
+      //arr.clear();
+      //System.out.println(arr);
+      
+      arr.set(2, "Tom");
+      System.out.println("output after set:"+arr);
+      
+      int pos = obj.indexOf("Tom");
+      System.out.println(pos);
+      
+      }
 }
