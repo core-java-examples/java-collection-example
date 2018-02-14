@@ -15,6 +15,7 @@ public class ArrayListSort  {
 			System.out.println(counter);
 		}
 
+	   
 	   /* Sort statement*/
 	   Collections.sort(listofcountries);
 
