@@ -31,7 +31,7 @@ public class LoopExample {
 
       /*Looping Array List using Iterator*/
       System.out.println("Iterator");
-      Iterator iter = arrlist.iterator();
+      Iterator<Integer> iter = arrlist.iterator();
       while (iter.hasNext()) {
          System.out.println(iter.next());
       }
