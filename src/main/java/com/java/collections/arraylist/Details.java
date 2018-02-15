@@ -1,21 +1,26 @@
 package com.java.collections.arraylist;
-import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.Iterator;
-
+import java.util.ArrayList;
 public class Details {
+    public static void main(String[] args) {
 
- public static void main(String a[]){
-    CopyOnWriteArrayList<String> al = new CopyOnWriteArrayList<String>();
+        //ArrayList<String> Declaration
+        ArrayList<String> al= new ArrayList<String>();
+        //add method for String ArrayList
+        al.add("Ram");
+        al.add("Shyam");
+        al.add("CPS");
+        al.add("John");
+        al.add("Steve");
+        System.out.println("Elements of ArrayList of String Type: "+al);
 
-    //Adding elements to synchronized ArrayList
-    al.add("Pen");
-    al.add("NoteBook");
-    al.add("Ink");
-
-    System.out.println("Displaying synchronized ArrayList Elements:");
-    //Synchronized block is not required in this method
-    Iterator<String> iterator = al.iterator(); 
-    while (iterator.hasNext())
-       System.out.println(iterator.next());
-  }
+        //ArrayList<Integer> Declaration 
+        ArrayList<Integer> al2 = new ArrayList<Integer>();
+        //add method for integer ArrayList
+        al2.add(1);
+        al2.add(34);
+        al2.add(99);
+        al2.add(99);
+        al2.add(78);
+        System.out.println("Elements of ArrayList of Integer Type: "+al2);
+    }
 }
