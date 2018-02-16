@@ -1,26 +1,26 @@
 package com.java.collections.arraylist;
 import java.util.ArrayList;
 public class Details {
-    public static void main(String[] args) {
 
-        //ArrayList<String> Declaration
-        ArrayList<String> al= new ArrayList<String>();
-        //add method for String ArrayList
-        al.add("Ram");
-        al.add("Shyam");
-        al.add("CPS");
-        al.add("John");
-        al.add("Steve");
-        System.out.println("Elements of ArrayList of String Type: "+al);
+   public static void main(String a[]){
+     ArrayList<String> al = new ArrayList<String>();
 
-        //ArrayList<Integer> Declaration 
-        ArrayList<Integer> al2 = new ArrayList<Integer>();
-        //add method for integer ArrayList
-        al2.add(1);
-        al2.add(34);
-        al2.add(99);
-        al2.add(99);
-        al2.add(78);
-        System.out.println("Elements of ArrayList of Integer Type: "+al2);
-    }
+     //Adding elements to the ArrayList
+     al.add("Apple");
+     al.add("Orange");
+     al.add("Mango");
+     al.add("Grapes");
+     System.out.println("ArrayList: "+al);
+
+     ArrayList<String> al2 = (ArrayList<String>)al.clone();
+     System.out.println("Shallow copy of ArrayList: "+ al2);
+
+     //add and remove on original ArrayList
+     al.add("Fig");
+     al.remove("Orange");
+
+     //Display of both ArrayLists after add & remove
+     System.out.println("Original ArrayList:"+al);
+     System.out.println("Cloned ArrayList:"+al2);
+   }
 }
